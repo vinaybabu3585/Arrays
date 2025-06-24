@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int size;
+    printf("Enter the size: ");
+    scanf("%d",&size);
+    
+    int arr[size];
+    printf("Enter the %d array elements: ");
+    for(int i=0;i<size;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    int small=arr[0];
+    printf("Smallest elements in array: ");
+    for(int i=1;i<size;i++)
+    {
+        if(arr[i]<arr[i+1])
+        small=arr[i];
+    }
+    printf("%d ",small);
+   
+    return 0;
+}
