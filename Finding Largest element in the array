@@ -12,7 +12,7 @@ int main()
         scanf("%d",&arr[i]);
     }
     int large=arr[0];
-    printf("Sum of Array elements: ");
+    printf("Largest elements in array: ");
     for(int i=1;i<size;i++)
     {
         if(arr[i]>arr[i+1])
